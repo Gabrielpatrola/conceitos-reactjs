@@ -14,9 +14,9 @@ function App() {
 
   async function handleAddRepository() {
     const response = await api.post("repositories", {
-      url: "Titulo",
-      title: "Owner",
-      techs: "Owner",
+      url: "https://google.com",
+      title: "Repositório de teste",
+      techs: ["React", "Node.js"],
     });
 
     const repository = response.data;
